@@ -2,43 +2,50 @@
   "-MiBsknNSQ6aBG1-2lQS": {
     "Title": "bibulous",
     "Definition": "given to or marked by the consumption of alcohol",
-    "Language": "English",
+    "Language": "Old English",
     "firebaseKey": "-MiBsknNSQ6aBG1-2lQS",
-    "uid": "e6QOUG9KFmaCpJAJnEN5xseIbea2"
+    "uid": "aaivvy58aKgCoUYMTR53DvZZx7e2"
   },
   "-MiBuU13EaKmGOMjJF-X": {
     "Title": "tenebrous",
-    "Definiton": "dark and gloomy",
-    "Language": "English",
+    "Definition": "dark and gloomy",
+    "Language": "Old English",
     "firebaseKey": "-MiBuU13EaKmGOMjJF-X",
-    "uid": "e6QOUG9KFmaCpJAJnEN5xseIbea2"
+    "uid": "aaivvy58aKgCoUYMTR53DvZZx7e2"
   },
   "-MiBvEFJTI3FmTzDu_3V": {
     "Title": "myrmidon",
     "Definition": "a follower who carries out orders without question",
-    "Language": "English",
+    "Language": "Old English",
     "firebaseKey": "-MiBvEFJTI3FmTzDu_3V",
-    "uid": "e6QOUG9KFmaCpJAJnEN5xseIbea2"
+    "uid": "aaivvy58aKgCoUYMTR53DvZZx7e2"
   },
   "-MiBvW8ME_DvO2GzwQ8D": {
     "Title": "pule",
     "Definition": "cry weakly or softly",
-    "Language": "English",
+    "Language": "Old English",
     "firebaseKey": "-MiBvW8ME_DvO2GzwQ8D",
-    "uid": "e6QOUG9KFmaCpJAJnEN5xseIbea2"
+    "uid": "aaivvy58aKgCoUYMTR53DvZZx7e2"
   },
   "-MiBwAF5wOY00AYJm7cR": {
     "Title": "eschew",
     "Definition": "avoid and stay away from deliberately",
-    "Language": "English",
+    "Language": "Old English",
     "firebaseKey": "-MiBwAF5wOY00AYJm7cR",
-    "uid": "e6QOUG9KFmaCpJAJnEN5xseIbea2"
+    "uid": "aaivvy58aKgCoUYMTR53DvZZx7e2"
   },
   "-MiBvf3bIyooE6x4nLLB": {
     "Title": "junta",
     "Definition": "a group of officers who rule a country after seizing power",
-    "Language": "English",
+    "Language": "Old English",
     "firebaseKey": "-MiBvf3bIyooE6x4nLLB",
-    "uid": "e6QOUG9KFmaCpJAJnEN5xseIbea2"
+    "uid": "aaivvy58aKgCoUYMTR53DvZZx7e2"
+  },
+  "-MiBw4tCvNZd23yTVDQw": {
+    "Title": "angry",
+    "Definition": "feeling or showing strong annoyance,displeasure, or hostility;full of anger",
+    "Language": "English",
+    "firebaseKey": "-MiBw4tCvNZd23yTVDQw",
+    "uid":"aaivvy58aKgCoUYMTR53DvZZx7e2"
   }
 }

@@ -2,6 +2,7 @@ import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
 
 const addEntryForm = (obj = {}) => {
+  console.warn('yes');
   clearDom();
   const domString = `
   <form id="${obj.firebaseKey ? `update-entry--${obj.firebaseKey}` : 'submit-entry'}" class="mb-4">
@@ -13,9 +14,9 @@ const addEntryForm = (obj = {}) => {
         <label for="type" class="type">type</label>
         <input type="text" class="form-control" id="type" value="${obj.Language || ''}" aria-describedby="type" required>
       </div>
-      <div class="decription">
-        <label for="decription" class="description">description</label>
-        <input type="text" class="form-control" id="description" value"${obj.Description || ''}" aria-describedby="description" required>
+      <div class="definition">
+        <label for="definition" class="definition">definition</label>
+        <input type="text" class="form-control" id="definition" value"${obj.Definition || ''}" aria-describedby="definition" required>
       </div>
   
       <button type="submit" class="btn btn-primary" id="Submit">Add</button>

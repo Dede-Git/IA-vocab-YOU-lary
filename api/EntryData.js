@@ -70,6 +70,21 @@ const updateEntry = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const oldEnglishFilter = (${"Old English"}) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/books.json?orderBy="Language"&equalTo="${"Old English"}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const onSale = Object.values(data).filter((item) => item.Language);
+      resolve(onSale);
+    })
+    .catch(reject);
+});
+
 export {
   getEntries,
   createEntry,

@@ -6,13 +6,13 @@ const formEvents = (user) => {
     e.preventDefault();
 
     // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A Entry
-    if (e.target.id.includes('update-entry')) {
+    if (e.target.id.includes('submit-entry')) {
       // console.warn('CLICKED SUBMIT ENTRY', e.target.id);
 
       const payload = {
-        title: document.querySelector('#title').value,
-        price: document.querySelector('#type').value,
-        description: document.querySelector('#description').value,
+        Title: document.querySelector('#title').value,
+        Language: document.querySelector('#type').value,
+        Definition: document.querySelector('#definition').value,
         uid: user.uid
       };
 
@@ -26,16 +26,16 @@ const formEvents = (user) => {
       });
     }
 
-    // TODO: CLICK EVENT FOR EDITING A BOOK
+    // TODO: CLICK EVENT FOR EDITING A ENTRY
     if (e.target.id.includes('update-entry')) {
       const [, firebaseKey] = e.target.id.split('--');
       // console.warn('CLICKED UPDATE BOOK', e.target.id);
       console.warn(firebaseKey);
 
       const payload = {
-        title: document.querySelector('#title').value,
-        price: document.querySelector('#price').value,
-        description: document.querySelector('#description').value,
+        Title: document.querySelector('#title').value,
+        Language: document.querySelector('#type').value,
+        Definition: document.querySelector('#definition').value,
         firebaseKey,
       };
 
