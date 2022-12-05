@@ -18,7 +18,7 @@ const domEvents = (user) => {
     }
 
     // TODO: CLICK EVENT FOR SHOWING FORM FOR ADDING A ENTRY
-    if (e.target.id.includes('add-entry')) {
+    if (e.target.id.includes('add-entry-btn')) {
       console.warn('ADD ENTRY');
       addEntryForm(user.uid);
     }

@@ -15,7 +15,9 @@ const startApp = (user) => {
   formEvents(user);
   navigationEvents(user);
 
-  getEntries(user.uid).then((entries) => showEntries(entries));
+  getEntries(user.uid).then((entries) => {
+    showEntries(entries);
+  });
 };
 
 export default startApp;

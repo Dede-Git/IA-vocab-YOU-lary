@@ -9,8 +9,8 @@ const emptyEntries = () => {
 const showEntries = (array) => {
   clearDom();
 
-  // const btnString = '<button class="btn btn-success btn-lg mb-4" id="add-entry-btn">Add A entry</button>';
-  // renderToDom('#add-button', btnString);
+  const btnString = '<button class="btn btn-success btn-lg mb-4" id="add-entry-btn">Add A entry</button>';
+  renderToDOM('#add-button', btnString);
 
   let domString = '';
   array.forEach((item) => {
@@ -19,7 +19,7 @@ const showEntries = (array) => {
   <div class="card-body">
     <h5 class="card-title">${item.Title}</h5>
     <h6 class="card-subtitle mb-2 text-muted">${item.Language}</h6>
-    <p class="card-text">${item.Description}.</p>
+    <p class="card-text">${item.Definition}.</p>
     <hr>
     <i class="btn btn-success fas fa-eye"
     <i id="edit-entry-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
@@ -29,7 +29,6 @@ const showEntries = (array) => {
   });
 
   renderToDOM('#get', domString);
-  console.warn('gotcha');
 };
 
 export { showEntries, emptyEntries };
