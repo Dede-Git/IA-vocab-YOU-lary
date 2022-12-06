@@ -70,8 +70,8 @@ const updateEntry = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const oldEnglishFilter = (${"Old English"}) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/books.json?orderBy="Language"&equalTo="${"Old English"}"`, {
+const oldEnglishFilter = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -79,8 +79,23 @@ const oldEnglishFilter = (${"Old English"}) => new Promise((resolve, reject) => 
   })
     .then((response) => response.json())
     .then((data) => {
-      const onSale = Object.values(data).filter((item) => item.Language);
-      resolve(onSale);
+      const oldEnglish = Object.values(data).filter((item) => item.Language === 'Old English');
+      resolve(oldEnglish);
+    })
+    .catch(reject);
+});
+
+const EnglishFilter = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const English = Object.values(data).filter((item) => item.Language === 'English');
+      resolve(English);
     })
     .catch(reject);
 });
@@ -90,5 +105,7 @@ export {
   createEntry,
   getSingleEntry,
   deleteEntry,
+  oldEnglishFilter,
+  EnglishFilter,
   updateEntry
 };

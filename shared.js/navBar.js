@@ -6,6 +6,7 @@ const navBar = () => {
   <form class="container-fluid justify-content-start">
     <a class="navbar-brand title" href="#">Vocab-YOU-Lary</a>
     <button class="btn btn-outline-success me-2" type="button" id="old-english">Old English</button>
+    <button class="btn btn-outline-success me-2" type="button" id="english">English</button>
     <button class="btn btn-sm btn-outline-secondary" type="button" id="all-words">All Words</button>
   </form>
 <div id="logout-button"</div>
